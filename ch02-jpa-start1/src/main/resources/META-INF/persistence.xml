@@ -9,14 +9,14 @@
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
             <property name="javax.persistence.jdbc.user" value="sa"/>
             <property name="javax.persistence.jdbc.password" value=""/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:~/test"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" /> <!-- 데이터베이스 방언-->
 
             <!-- 옵션 -->
-            <property name="hibernate.show_sql" value="true" />
-            <property name="hibernate.format_sql" value="true" />
-            <property name="hibernate.use_sql_comments" value="true" />
-            <property name="hibernate.id.new_generator_mappings" value="true" />
+            <property name="hibernate.show_sql" value="true" /> <!-- 하이버네이트가 실행한 SQL을 출력한다 -->
+            <property name="hibernate.format_sql" value="true" /> <!-- 하이버네이트가 실행한 SQL을 출력할 때 보기 쉽게 정렬한다. -->
+            <property name="hibernate.use_sql_comments" value="true" /> <!-- 쿼리를 출력할 때 주석도 함께 출력한다. -->
+            <property name="hibernate.id.new_generator_mappings" value="true" /> <!-- JPA 표준에 맞춘 새로운 키 생성 전략을 사용한다. -->
 
             <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
         </properties>
